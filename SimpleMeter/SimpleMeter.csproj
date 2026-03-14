@@ -1,0 +1,48 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <AssemblyName>SimpleMeter</AssemblyName>
+  </PropertyGroup>
+
+  <!--
+    DLL 탐색 순서:
+    1. 파싱수정남음\PacketProcessorDll\dist\          (C++ Release 빌드 후 자동 생성)
+    2. 파싱수정남음\bin\Release\net10.0-windows\      (a2meter Release 빌드 산출물)
+    3. 파싱수정남음\bin\Debug\net10.0-windows\        (a2meter Debug 빌드 산출물)
+  -->
+  <PropertyGroup>
+    <_DllDist>..\파싱수정남음\PacketProcessorDll\dist\PacketProcessor.dll</_DllDist>
+    <_DllRelease>..\파싱수정남음\bin\Release\net10.0-windows\PacketProcessor.dll</_DllRelease>
+    <_DllDebug>..\파싱수정남음\bin\Debug\net10.0-windows\PacketProcessor.dll</_DllDebug>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="$(_DllDist)"
+          Condition="Exists('$(_DllDist)')">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>PacketProcessor.dll</Link>
+    </None>
+    <None Include="$(_DllRelease)"
+          Condition="!Exists('$(_DllDist)') AND Exists('$(_DllRelease)')">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>PacketProcessor.dll</Link>
+    </None>
+    <None Include="$(_DllDebug)"
+          Condition="!Exists('$(_DllDist)') AND !Exists('$(_DllRelease)') AND Exists('$(_DllDebug)')">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Link>PacketProcessor.dll</Link>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WindivertDotnet" Version="1.1.2" />
+  </ItemGroup>
+
+  <Target Name="WarnMissingDll" AfterTargets="Build">
+    <Warning Text="PacketProcessor.dll 을 찾을 수 없습니다. a2meter 프로젝트를 먼저 빌드하세요."
+             Condition="!Exists('$(_DllDist)') AND !Exists('$(_DllRelease)') AND !Exists('$(_DllDebug)')" />
+  </Target>
+</Project>
