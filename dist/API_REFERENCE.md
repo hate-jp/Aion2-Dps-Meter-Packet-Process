@@ -280,7 +280,10 @@ typedef const char* (*GetSkillNameCallback)(int skillCode, void* userdata);
 
 스킬 코드에 해당하는 이름 문자열을 반환한다.
 반환된 포인터는 **다음 동일 스레드의 콜백 호출 전까지** 유효해야 한다.
-없으면 `NULL` 반환.
+DB에 없는 코드일 경우 스킬 코드 숫자 문자열(예: `"11020030"`) 또는 `NULL`을 반환한다.
+
+> **참고:** 스킬 코드의 DB 존재 여부 판별에는 이 콜백의 반환 문자열이 아닌
+> `ContainsSkillCodeCallback`이 사용된다. 이 콜백은 UI 표시 및 이름 비교 목적으로만 호출된다.
 
 ### `ContainsSkillCodeCallback`
 
@@ -288,7 +291,8 @@ typedef const char* (*GetSkillNameCallback)(int skillCode, void* userdata);
 typedef int (*ContainsSkillCodeCallback)(int skillCode, void* userdata);
 ```
 
-스킬 코드가 데이터에 존재하면 `1`, 없으면 `0`.
+스킬 코드가 DB에 존재하면 `1`, 없으면 `0`.
+내부 스킬 코드 정규화(`normalizeSkillId`)에서 DB 존재 여부를 판별하는 핵심 콜백이다.
 
 ### `IsMobBossCallback`
 

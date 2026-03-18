@@ -45,15 +45,15 @@ typedef void (*OnMobSpawnCallback)(
 typedef void (*OnSummonCallback)(
     int actorId, int petId, void* userdata);
 
-// entityId, nickname(UTF-8), serverId, jobCode
+// entityId, nickname(UTF-8), serverId, jobCode, isSelf(1=자기자신 패킷)
 typedef void (*OnUserInfoCallback)(
-    int entityId, const char* nickname, int serverId, int jobCode, void* userdata);
+    int entityId, const char* nickname, int serverId, int jobCode, int isSelf, void* userdata);
 
 // entityId
 typedef void (*OnEntityRemovedCallback)(
     int entityId, void* userdata);
 
-// level: 0=Trace,1=Debug,2=Info,3=Warning,4=Error
+// level: 0=INFO, 1=WARN, 2=ERROR
 typedef void (*OnLogCallback)(
     int level, const char* message, void* userdata);
 
