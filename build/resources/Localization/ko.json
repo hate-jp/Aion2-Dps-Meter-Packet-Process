@@ -1,0 +1,65 @@
+{
+  "job_gladiator": "검성",
+  "job_templar": "수호성",
+  "job_assassin": "살성",
+  "job_ranger": "궁성",
+  "job_sorcerer": "마도성",
+  "job_spiritmaster": "정령성",
+  "job_cleric": "치유성",
+  "job_chanter": "호법성",
+
+  "lbl_combat_time": "전투시간",
+  "lbl_total_dps": "TOTAL DPS",
+  "lbl_total_damage": "누적 피해량",
+  "lbl_boss_only": "보스만",
+  "fmt_dps_per_sec": "{0:N0}/초",
+
+  "settings_title": "설정",
+
+  "settings_section_damagebar": "대미지바",
+  "settings_label_bar_top": "위쪽 색상",
+  "settings_label_bar_mid": "중간 색상",
+  "settings_label_bar_bottom": "아래쪽 색상",
+  "settings_label_bar_height": "높이 비율",
+  "settings_label_bar_glow": "글로우 색상",
+  "settings_label_bar_row_bg": "행 배경 색상",
+  "settings_label_bar_row_bg_opacity": "행 배경 투명도",
+  "settings_label_bar_opacity": "바 투명도",
+
+  "settings_section_font_color": "폰트 색상 (영역별)",
+  "settings_label_boss_name": "보스 이름",
+  "settings_label_stat_label": "스탯 라벨",
+  "settings_label_stat_value": "스탯 수치",
+  "settings_label_dps_value": "DPS 수치",
+  "settings_label_player_name": "플레이어 이름",
+
+  "settings_section_background": "배경 및 투명도",
+  "settings_label_window_width": "창 너비",
+  "settings_label_bg_color": "배경 색상",
+  "settings_label_window_opacity": "창 투명도",
+
+  "settings_section_hotkey": "리셋 단축키",
+  "settings_label_hotkey_combo": "단축키 조합",
+  "settings_note_hotkey": "※ 단축키 변경은 프로그램 재실행 후 적용됩니다.",
+
+  "settings_section_clickthrough": "클릭 통과 단축키",
+  "settings_label_click_disable": "클릭 비허용",
+  "settings_label_click_enable": "클릭 허용",
+  "settings_note_clickthrough": "※ 클릭 비허용 시 창을 통과하여 뒤쪽 프로그램을 클릭할 수 있습니다.\n※ 클릭 통과 상태는 저장되지 않으며 항상 허용 상태로 시작됩니다.",
+
+  "settings_section_language": "언어 / Language",
+  "settings_label_language": "언어",
+  "settings_note_language": "※ UI 텍스트는 즉시 적용됩니다. 스킬명/몹명은 재실행 후 적용됩니다.",
+
+  "settings_section_display": "표시 옵션",
+  "settings_chk_server_name": "닉네임에 서버명 표시  [서버]",
+  "settings_chk_target_id": "타겟 이름에 ID 표시  (이름 12345)",
+  "settings_color_format": "색상 형식: #AARRGGBB  또는  #RRGGBB",
+
+  "settings_btn_reset_defaults": "기본값 초기화",
+  "settings_btn_cancel": "취소",
+  "settings_btn_save": "저장",
+
+  "msg_lang_restart_title": "재실행 필요",
+  "msg_lang_restart_body": "언어 변경은 재실행 후 완전히 적용됩니다.\n지금 재실행하시겠습니까?"
+}

@@ -1,0 +1,65 @@
+{
+  "job_gladiator": "Gladiator",
+  "job_templar": "Templar",
+  "job_assassin": "Assassin",
+  "job_ranger": "Ranger",
+  "job_sorcerer": "Sorcerer",
+  "job_spiritmaster": "Spiritmaster",
+  "job_cleric": "Cleric",
+  "job_chanter": "Chanter",
+
+  "lbl_combat_time": "Combat Time",
+  "lbl_total_dps": "TOTAL DPS",
+  "lbl_total_damage": "Total Damage",
+  "lbl_boss_only": "Boss Only",
+  "fmt_dps_per_sec": "{0:N0}/s",
+
+  "settings_title": "Settings",
+
+  "settings_section_damagebar": "Damage Bar",
+  "settings_label_bar_top": "Top Color",
+  "settings_label_bar_mid": "Mid Color",
+  "settings_label_bar_bottom": "Bottom Color",
+  "settings_label_bar_height": "Height Ratio",
+  "settings_label_bar_glow": "Glow Color",
+  "settings_label_bar_row_bg": "Row Background",
+  "settings_label_bar_row_bg_opacity": "Row BG Opacity",
+  "settings_label_bar_opacity": "Bar Opacity",
+
+  "settings_section_font_color": "Font Colors",
+  "settings_label_boss_name": "Boss Name",
+  "settings_label_stat_label": "Stat Labels",
+  "settings_label_stat_value": "Stat Values",
+  "settings_label_dps_value": "DPS Values",
+  "settings_label_player_name": "Player Name",
+
+  "settings_section_background": "Background & Opacity",
+  "settings_label_window_width": "Window Width",
+  "settings_label_bg_color": "Background Color",
+  "settings_label_window_opacity": "Window Opacity",
+
+  "settings_section_hotkey": "Reset Hotkey",
+  "settings_label_hotkey_combo": "Hotkey Combo",
+  "settings_note_hotkey": "※ Hotkey changes apply after restarting the program.",
+
+  "settings_section_clickthrough": "Click-Through Hotkeys",
+  "settings_label_click_disable": "Click Disable",
+  "settings_label_click_enable": "Click Enable",
+  "settings_note_clickthrough": "※ When click-disabled, clicks pass through to windows behind.\n※ Click-through state is not saved and always starts as enabled.",
+
+  "settings_section_language": "언어 / Language",
+  "settings_label_language": "Language",
+  "settings_note_language": "※ UI text applies immediately. Skill/mob names require restart.",
+
+  "settings_section_display": "Display Options",
+  "settings_chk_server_name": "Show server name in nickname  [Server]",
+  "settings_chk_target_id": "Show ID in target name  (Name 12345)",
+  "settings_color_format": "Color format: #AARRGGBB  or  #RRGGBB",
+
+  "settings_btn_reset_defaults": "Reset to Defaults",
+  "settings_btn_cancel": "Cancel",
+  "settings_btn_save": "Save",
+
+  "msg_lang_restart_title": "Restart Required",
+  "msg_lang_restart_body": "Language change takes full effect after restart.\nRestart now?"
+}
