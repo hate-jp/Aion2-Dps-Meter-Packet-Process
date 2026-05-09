@@ -1,55 +1,47 @@
 # a2meter
-
-더이상 DLL을 통해 다른 사람들이 개발할 필요성이 없어서 개인빌드 배포용으로 변경합니다.
-
-WinDivert로 TCP 패킷을 캡처해 미터기 DLL에 투입하고, 콜백으로 실시간 DPS를 집계합니다.
-
+WinDivert 또는 Npcap을 통해 TCP 패킷을 캡처해 미터기 DLL에 투입하고, 콜백으로 실시간 DPS를 집계합니다.
 관리자 권한을 필요로 합니다.
-
 ---
 
 ## 1. 미터기 실행후 화면
 
 <p align="left">
-<img width="364" height="163" alt="Image" src="https://github.com/user-attachments/assets/871fc61b-bb9d-4f99-936d-69a239a5fe7a" />
+<img width="385" height="229" alt="Image" src="https://github.com/user-attachments/assets/d1f8d190-7a9b-44c8-98b5-bd376107b026" />
 </p>
-
-📊 버튼 : 몬스터 상태이상 창 열기
 
  ⚙ 버튼 : 설정
  
-💧 버튼 : 정령성 불길의 축복 버프로 인한 대미지 시전한 정령성에게 전달
-
 ❤️ 버튼 : 체력바 창 사용 (보스만 선택 옵션에 따라 자동 표시 및 해당 타겟 처치시 3초후 숨김)
 
-👑 버튼 : 표기 대상 보스만(비활성화시 전체 표기)
+📊 버튼 : 몬스터 상태이상 창 열기
 
 ---
 
 ## 2. 미터기 설정창 화면
 
 <p align="left">
-<img width="529" height="489" alt="Image" src="https://github.com/user-attachments/assets/daf2eb50-0498-45ae-8098-bc918989c06a" />
+<img width="445" height="612" alt="Image" src="https://github.com/user-attachments/assets/6965d543-f531-43ae-a1ac-60e25f9f5125" />
 </p>
-
 <p align="left">
-<img width="530" height="495" alt="Image" src="https://github.com/user-attachments/assets/1ecfa1d4-8608-44a3-a258-40349d534882" />
+<img width="432" height="615" alt="Image" src="https://github.com/user-attachments/assets/fa2f7847-43aa-409b-b0db-77db439f88c8" />
 </p>
-
 <p align="left">
-<img width="530" height="489" alt="Image" src="https://github.com/user-attachments/assets/d5abc0f8-6023-4ad2-b76c-87b0d9ca746c" />
+<img width="1108" height="615" alt="Image" src="https://github.com/user-attachments/assets/4383e449-1e77-4396-867d-8215eeabf86c" />
 </p>
-
 <p align="left">
-<img width="525" height="487" alt="Image" src="https://github.com/user-attachments/assets/a3f2f344-9078-4216-87f8-5b6a8f221bb9" />
+<img width="1108" height="611" alt="Image" src="https://github.com/user-attachments/assets/23b0ccc0-d534-45ab-8930-e9a34b90b73d" />
 </p>
-
 <p align="left">
-<img width="534" height="490" alt="Image" src="https://github.com/user-attachments/assets/40d0da31-7e7b-42d0-a4a2-4fe868d2fd09" />
+<img width="960" height="617" alt="Image" src="https://github.com/user-attachments/assets/ef1607b1-29b8-4d07-b78f-eefb9f319577" />
 </p>
-
 <p align="left">
-<img width="526" height="490" alt="Image" src="https://github.com/user-attachments/assets/5d0be1ac-5db7-4fc5-9509-8beec065f3df" />
+<img width="436" height="613" alt="Image" src="https://github.com/user-attachments/assets/96be2956-3cdf-4dde-9da1-7a5353fcca5e" />
+</p>
+<p align="left">
+<img width="432" height="615" alt="Image" src="https://github.com/user-attachments/assets/83c3c95c-813d-4ee1-9dfb-72201a029627" />
+</p>
+<p align="left">
+<img width="442" height="619" alt="Image" src="https://github.com/user-attachments/assets/ff5fd617-23af-4fb2-9ebe-45a47daef280" />
 </p>
 ---
 
@@ -79,17 +71,13 @@ src="https://github.com/user-attachments/assets/18fe3767-e699-4738-9b31-40a818ab
 ## 4. 디테일 화면
 
 <p align="left">
-<img width="1108" height="627" alt="Image"
-src="https://github.com/user-attachments/assets/21cbf489-6fc5-46ef-80b2-4bc12b089cb9" />
+<img width="1252" height="708" alt="Image" src="https://github.com/user-attachments/assets/cedd9484-8fed-4d38-b313-1648c31168b9" />
 </p>
 
----
-
-## 5. 실제 사용 화면
+스킬 그룹화
 
 <p align="left">
-<img width="343" height="444" alt="Image"
-src="https://github.com/user-attachments/assets/95bb33b0-2bc4-498d-bb69-1d775d8c512e" />
+<img width="346" height="578" alt="Image" src="https://github.com/user-attachments/assets/58385d63-e4bd-4c7a-87d9-5ed32d7e7447" />
 </p>
 
 ---
@@ -116,28 +104,26 @@ src="https://github.com/user-attachments/assets/95bb33b0-2bc4-498d-bb69-1d775d8c
  <p align="left">
   <img width="352" alt="Image" src="https://github.com/user-attachments/assets/6677c995-6220-4af0-804b-41574022af90" />
   </p>
-
 ---
 
-## 7. 예시 스크린샷에 사용된 세팅 값 정보
+## 7. 데이터 수집 사이트
 
-```json
-{
-  "barColorTop": "#FFFF2020",
-  "barColorMid": "#FFFFDDDD",
-  "barColorBottom": "#FF880000",
-  "barGlowColor": "#FFFF0000",
-  "fontColor": "#FFFFFFFF",
-  "backgroundColor": "#E0302828",
-  "windowOpacity": 1,
-  "barHeightPercent": 15,
-  "barOpacity": 1,
-  "barRowBgColor": "#80201010",
-  "barRowBgOpacity": 1,
-  "bossNameColor": "#FFFFFFFF",
-  "labelColor": "#66FFFFFF",
-  "statValueColor": "#FFFFFFFF",
-  "dpsValueColor": "#FFD4E86A",
-  "playerNameColor": "#FFFFFFFF"
-}
-```
+ 타임라인과 리플레이
+ <p align="left">
+  <img width="984" height="459" alt="Image" src="https://github.com/user-attachments/assets/5f114f59-74ce-46b7-8c80-8c040038e53e" />
+  </p>
+   <p align="left">
+  <img width="984" height="541" alt="Image" src="https://github.com/user-attachments/assets/9a6bf9f2-1484-49db-9aba-7cbd979abb5d" />
+  </p>
+
+  오프닝 시퀀스
+   <p align="left">
+  <img width="990" height="263" alt="Image" src="https://github.com/user-attachments/assets/ef1373ac-489d-43df-be72-8e3415e545d4" />
+  </p>
+   <p align="left">
+  <img width="982" height="264" alt="Image" src="https://github.com/user-attachments/assets/a280211b-40e4-4c42-afc4-c7c2a6595d07" />
+  </p>
+
+URL : https://aion2-dps-statistics.web.app/
+---
+
